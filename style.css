@@ -1,30 +1,152 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffeedf;
+    color: #145434;
+    font-family: 'Space Grotesk', sans-serif;
+    /* height: 100vh; */
+    position: absolute;
+    z-index: 10;
+}
+
+
+.container {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #145434;
+    /* padding: 0.5rem; */
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    padding: 10px;
+    margin: 0;
+    
 }
+
+.material-icons {
+    font-size: 36px;
+}
+
+.header h1 {
+  font-size: 36px;
+}
+
+main {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px; 
+  flex-wrap: wrap;
+  margin: 3rem;
+  margin-top: 100px;
+  z-index: 1;
+
+
+}
+
+/* @media only screen and (max-width: 800px) {
+	main {
+		grid-template-columns: 1fr;
+	}
+} */
+
+.card {
+  /*  */
+  display: block;
+  width: 100%;
+  /* flex: 1 0 400px; */
+  background-color: #145434;
+  color: #ffeedf;
+  position: relative;
+  padding: 1.75rem 1.75rem 3.5rem 1.75rem;
+  height: 240px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400; /* regular */
+    border-bottom: 1.5px solid #ffeedf;
+    padding-bottom: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.sub {
+  font-size: 18px;
+  font-weight: 400;
+}
+.text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* .card > p:last-of-type {
+    font-weight: 700;
+} */
+
+span {
+    color: #145434;
+}
+
+.circle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -20px;
+    left: -20px;
+    border: 2px solid #145434;
+    background-color: #ffeedf;
+    font-size: 24px;
+    color: #145434;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -0.5rem;
+    right: -0.5rem;
+    border: 2px solid #145434;
+    background-color: #ffeedf;
+    color: #145434;
+    width: 200px; 
+    height: 50px;
+}
+
+.button p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button a {
+    position: absolute;
+    right: 0;
+    padding-right: 0.25rem;
+}
+
